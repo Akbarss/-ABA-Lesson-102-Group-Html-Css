@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Position Relative Example</title>
+	<style>
+		.relative-box {
+			position: relative;
+			width: 200px;
+			height: 200px;
+			background-color: lightblue;
+			top: 20px;
+			/* смещение вниз на 20px */
+			left: 30px;
+			/* смещение вправо на 30px */
+		}
+
+		.relative-container {
+			position: relative;
+			width: 300px;
+			height: 300px;
+			background-color: lightgrey;
+		}
+
+		.absolute-box {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background-color: lightcoral;
+			top: 50px;
+			/* смещение вниз на 50px */
+			left: 50px;
+			/* смещение вправо на 50px */
+		}
+
+		.animation {
+			width: 100px;
+			height: 100px;
+			background: red;
+			position: relative;
+			animation: mymove 5s infinite;
+		}
+
+		@keyframes mymove {
+			from {
+				top: 0px;
+			}
+
+			50% {
+				top: 100px !important;
+			}
+
+			to {
+				top: 200px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div class="relative-box">Relative Position</div>
+	<div class="relative-container">
+		<div class="absolute-box">Absolute Position</div>
+	</div>
+
+	<div class="animation"></div>
+
+</body>
+
+</html>

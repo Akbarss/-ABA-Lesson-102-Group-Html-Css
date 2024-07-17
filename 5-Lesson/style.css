@@ -10,6 +10,10 @@ header {
   background-color: #f6f5f4;
   box-shadow: 10px 4px 13px 0px rgba(34, 60, 80, 0.2);
   border: 1px solid #aaa3a3;
+  position: sticky;
+  top: 10px;
+  width: 100%;
+  z-index: 3;
 }
 
 .container {

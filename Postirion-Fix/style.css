@@ -1,0 +1,16 @@
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "aside main";
+  gap: 20px;
+}
+
+#side-left-fix {
+  position: fixed;
+  grid-area: aside;
+  width: 20%;
+}
+
+#main-doc {
+  grid-area: main;
+}
